@@ -4,8 +4,8 @@ export const suggestChains: ChainInfo[] = [
   {
     chainId: 'bitcanna-1',
     chainName: 'BitCanna',
-    rpc: 'https://rpc.bitcanna.safeblock.space',
-    rest: 'https://api.bitcanna.safeblock.space',
+    rpc: 'https://rpc.bitcanna.io/',
+    rest: 'https://lcd.bitcanna.io/',
     bip44: {
       coinType: 118,
     },
