@@ -161,38 +161,38 @@ export const network: NetworkConfig = {
 export const networks: NetworkConfig[] = [
   network,
   {
-    id: 'juno-1',
-    name: 'Juno',
-    description: 'Juno Mainnet',
-    logo: 'logo.svg',
-    website: 'https://junonetwork.io',
-    apiURL: 'https://lcd-juno.itastakers.com',
-    rpcURL: 'https://rpc-juno.itastakers.com',
-    explorerURL: 'https://www.mintscan.io/juno/',
-    supplyURL: 'https://supply.junonetwork.io/',
-    minBlockHeight: 3062001,
-    stakingDenom: 'JUNO',
+    id: 'bitcanna-1',
+    name: 'BitCanna',
+    description: 'Bitcanna Mainnet',
+    logo: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/bitcanna/images/bcna.svg',
+    website: 'https://bitcanna.io',
+    apiURL: 'https://api.bitcanna.safeblock.space',
+    rpcURL: 'https://rpc.bitcanna.safeblock.space',
+    explorerURL: 'https://www.mintscan.io/bitcanna/',
+    supplyURL: 'https://supply.safeblock.space/',
+    minBlockHeight: 12155001,
+    stakingDenom: 'BCNA',
     coinLookup: [
       {
-        viewDenom: 'JUNO',
-        chainDenom: 'ujuno',
+        viewDenom: 'BCNA',
+        chainDenom: 'ubcna',
         chainToViewConversionFactor: 1e-6,
-        icon: 'currencies/bitsong.png',
+        icon: 'currencies/bitcanna.png',
       },
     ],
-    addressPrefix: 'juno',
-    validatorAddressPrefix: 'junovaloper',
-    validatorConsensusaddressPrefix: 'junovalcons', // needed to map validators from staking queries to the validator set
+    addressPrefix: 'bcna',
+    validatorAddressPrefix: 'bcnavaloper',
+    validatorConsensusaddressPrefix: 'bcnavalcons', // needed to map validators from staking queries to the validator set
     HDPath: 'm/44\'/118\'/0\'/0/0',
     coinType: 118,
-    coinGeckoId: 'juno-network',
+    coinGeckoId: 'bitcanna',
     lockUpPeriod: '3 days',
     fees: {
       default: {
         gasEstimate: 350000,
         feeOptions: [
           {
-            denom: 'JUNO',
+            denom: 'BCNA',
             amount: 0.001,
           },
         ],
@@ -201,13 +201,13 @@ export const networks: NetworkConfig[] = [
         gasEstimate: 180000,
         feeOptions: [
           {
-            denom: 'ujuno',
+            denom: 'ubcna',
             amount: 0,
           },
         ],
       },
     },
-    icon: 'coins/juno.svg',
+    icon: 'coins/bitcanna.svg',
     localSigning: false, // this is only to be used as a developer tool - never deployed in production or for mainnet chains
   },
   {
