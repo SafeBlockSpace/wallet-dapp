@@ -8,11 +8,11 @@ export const network: NetworkConfig = {
   description: 'BitSong',
   logo: 'logo.svg',
   website: 'https://bitsong.io',
-  apiURL: 'https://lcd.explorebitsong.com',
-  rpcURL: 'https://rpc.explorebitsong.com',
+  apiURL: 'https://api.bitsong.safeblock.space',
+  rpcURL: 'https://rpc.bitsong.safeblock.space',
   explorerURL: 'https://www.mintscan.io/bitsong/',
   supplyURL: 'https://supply.bitsong.io/',
-  minBlockHeight: 2966151,
+  minBlockHeight: 15055001,
   stakingDenom: 'BTSG',
   coinLookup: [
     {
